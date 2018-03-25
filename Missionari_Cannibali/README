@@ -1,0 +1,62 @@
+Homework:
+———————————————————————————————————
+ Missionari e Cannibali in Prolog	                                       
+ Autore: Lorenzo Addazi                                              
+ Matricola: 213772                                                   
+———————————————————————————————————
+
+Eseguire codice in SWI-Prolog:
+———————————————————————————————————
+?- ['missionari_cannibali.pl'].
+?- find.
+———————————————————————————————————
+
+Stato Iniziale:
+———————————————————————————————————
+Missionari Destra: 3
+Missionari Sinistra: 3
+Cannibali Sinistra: 0
+Cannibali Destra: 0
+Posizione Barca: Sinistra
+———————————————————————————————————
+
+Stato Soluzione Finale:
+———————————————————————————————————
+Missionari Destra: 0
+Missionari Sinistra: 0
+Cannibali Sinistra: 3
+Cannibali Destra: 3
+Posizione Barca: Destra
+———————————————————————————————————
+
+Mosse Possibili:
+———————————————————————————————————
+- Sinistra verso Destra:
+	2 missionari da sinistra verso destra.
+	2 cannibali da sinistra verso destra.
+	1 missionario ed 1 cannibale da sinistra verso destra
+	1 missionario da sinistra verso destra.
+	1 cannibale da sinistra verso destra.
+- Destra verso Sinistra:
+	2 missionari da destra verso sinistra.
+	2 cannibali da destra verso sinistra.
+	1 missionario ed 1 cannibale da destra verso sinistra.
+	1 missionario da destra verso sinistra.
+	1 cannibale da destra verso sinistra.
+———————————————————————————————————
+
+Ricorsione:
+———————————————————————————————————
+Si mantengono due insieme di stati:
+	- Explored: insieme contenente gli stati esplorati.
+	- MovesList: insieme contenente gli stati della soluzione
+Inizialmente Explored contiene solo lo stato iniziale, MovesList è vuoto.
+
+Per trovare il cammino da uno stato ‘A’ ad uno stato ‘C’:
+	1) ( ricerca ) si individua uno stato intermedio ‘B’ non esplorato dal quale 			muoversi da ‘A’ legalmente.
+	2) ( ricorsione ) si determina un cammino da ‘B’ a ‘C’:	
+		a) aggiungo B in testa ad Explored;
+		b) aggiungo B e A in testa a MovesList;
+Non appena Explored è vuoto si stampa la soluzione.
+		
+———————————————————————————————————

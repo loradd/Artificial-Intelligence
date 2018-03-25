@@ -1,0 +1,39 @@
+Neural Net Test before Training Session:
+
+Testing on data:
+out:     [-0.145]
+correct: [0     ]
+error:  0.01044954
+out:     [0.041 ]
+correct: [1     ]
+error:  0.45977598
+out:     [-0.511]
+correct: [1     ]
+error:  1.14117086
+out:     [-0.068]
+correct: [0     ]
+error:  0.00230158
+All errors: [0.010449541553135048, 0.45977597903663536, 1.1411708638242166, 0.0023015795211310682]
+Average error: 0.403424490984
+('Max error:', 1.1411708638242166, 'Median error:', 0.45977597903663536)
+(0.40342449098377947,)
+
+Neural Net Test after Training Session:
+
+Testing on data:
+out:     [0.009 ]
+correct: [0     ]
+error:  0.00004417
+out:     [0.978 ]
+correct: [1     ]
+error:  0.00023460
+out:     [0.994 ]
+correct: [1     ]
+error:  0.00001653
+out:     [0.014 ]
+correct: [0     ]
+error:  0.00009690
+All errors: [4.4165109457845506e-05, 0.00023460487346664907, 1.6529467543537716e-05, 9.6900630696750831e-05]
+Average error: 9.80500202912e-05
+('Max error:', 0.00023460487346664907, 'Median error:', 9.6900630696750831e-05)
+(9.8050020291195778e-05,)
